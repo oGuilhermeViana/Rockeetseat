@@ -1,0 +1,85 @@
+<!--
+    <table>
+
+    Prós
+    - Visualização de dados via linhas e colunas
+    - Boa acessibilidade para leitura dos dados
+
+    Contras
+    - Pouco flexível
+    - Precisa de estilização para melhor visualização
+
+    Não usar
+    - Para criar layout
+-->
+<table>
+    <caption>Pessoas por Idade</caption>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Guilherme</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Viana</td>
+            <td>22</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total: </td>
+            <td>2 pessoas</td>
+        </tr>
+    </tfoot>
+</table>
+
+<hr>
+
+<!--
+    2 Lojas
+
+    - Quantos produtos foram produzidos, quantos vendidos e agrupado por nomr dos produtos
+-->
+
+<table>
+    <caption>Produzidos x Vendidos</caption>
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: #f53434a1;">
+        <col span="2" style="background-color: #3457f5a1;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">Loja 1</th>
+            <th colspan="2" scope="colgroup">Loja 2</th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>80</td>
+            <td>50</td>
+            <td>87</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>65</td>
+            <td>43</td>
+            <td>76</td>
+            <td>54</td>
+        </tr>
+    </tbody>
+</table>
