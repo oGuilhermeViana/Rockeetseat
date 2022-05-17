@@ -1,0 +1,36 @@
+/*
+    Box model
+
+    - Você irá percerber que (quase) tudo são caixas no CSS
+    - Posicionamento, tamanho, espaçamento, borda, cores
+    - Caixas podem ficar ao lado uma da outra, ou acima
+    - Ekementos HTML são caixas 
+
+*/
+
+/*
+    Adionando CSS
+    - inline
+        - atribudo 'style'
+    
+    - <style>
+        - tag html que irá conter o css
+
+    - <link>
+        - arquivo css externo
+
+    - @import
+        - arquivo css externo
+*/
+
+/* CSS com link externo (pode deixar o site um pouco mais lento) */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+}
+button{
+    padding: 30px;
+    background-color: blueviolet;
+}
+

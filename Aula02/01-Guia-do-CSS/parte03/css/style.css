@@ -1,0 +1,36 @@
+/*
+    - A Cascata (cascading)
+
+    A escolha do browser de qual aplicar, caso haja muitas regras para o mesmo elemento
+
+    - Seu estilo é lido de cima para baixo.
+
+    - É levado em consideração 2 fatores
+        1. Origem do estilo
+        2. Especificidade
+
+    - Origem do estilo
+        Inline > tag style > tag ling
+        
+    - Especificidade
+        É o calculo matemático, onde, cada tipo de seletor e origem do estilo, possuem valores a serem considerados
+
+        0. Universal selector, combinatorse negation pseudo-class (:not())
+        1. Element type selector e pseudo-element(::after, ::before)
+        10. Classes e attribute selectors{[type="radio"]}
+        100. ID selector
+        1000.Inline
+    
+*/
+
+h1{
+    color: red;
+}
+
+h1{
+    color: blue;
+}
+
+/*
+    No caso acima o segundo sobrepós o primeiro
+*/ 
