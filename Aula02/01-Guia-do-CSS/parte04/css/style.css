@@ -1,0 +1,63 @@
+/*
+    - At-rules
+
+    - Está relacionado ao comportamento do CSS
+    - Começa com o sinal de @ sequido do indentificado e valor
+
+    - Exemplos comuns
+        - @import  *incluir um CSS externo
+        @import url("https://local.com/style.css");
+
+        - @media  *regras condicionais para dispositivos
+        @media(min-width: 350px){
+            ...
+        }    
+
+        - @font-face  *fonts externas
+        @font-face{
+            ...
+        }
+        
+        - @keyframes  *animation
+        @keyframes nameofanimation{
+            ...
+        }
+*/
+
+/*
+        Shorthand
+
+        - junção de propriedade
+        - resumido
+        - legível
+
+        background{
+            'background properties'
+            background-color: #000;
+            background-image: url(img/imagem.png);
+            background-repeat: no-repeat;
+            background-position: left top;
+
+            'background shorthand'
+            background: #000 url(img/imagem.png) no-repeat letf top;
+        }
+
+        font{
+            'font properties'
+            font-style: italic;
+            font-weight: bold;
+            font-size: .8em;
+            line-height: 1.2;
+            font-family: Arial, sans-serif;
+
+            'font shorthand'
+            font: italic bold .8em/1.2 arial, sans-serif;
+        }
+
+        Detalhes
+
+        - não irá considerar propriedades anterior
+        - valores não especificados irão assumir valor padrão
+        - geralmente, a ordem descrita não importa, mas, se houver muita propridade com valor semelhante, podemos encontrar problemas
+*/
+
