@@ -1,0 +1,48 @@
+/*
+    Comentários
+
+    - Não irá afetar o seu código
+    - Ajudar a lembrar blocos de códigos
+    - Deixa dicas para leitura
+    - Ajuda outros a entenderem
+    - Nunca esqueça de fechar um comentário
+    - Começa com '/*' e terminam com * /'
+*/
+
+/*
+    Anatomia
+
+    selector = h1
+    declaration = { ... }
+    properties = color, font-size
+    value = blueviolet, 60px
+*/
+
+/*
+    Seletores
+
+    - Tipos
+
+        - globais selector '*'
+        - element/type 'h1, h2, p, div'
+        - id selector '#box, #container'
+        - class selector '.red, .m-4'
+        - attribute selector, pseudo-class, pseudo-element e outros
+*/
+*{
+    margin: 0;
+}
+
+#container{
+    width: 300px;
+    background-color: gray;
+}
+h1, h2{
+    color: blueviolet;
+    font-size: 40px;
+}
+.m-4{
+    width: 300px;
+    background-color: gray;
+    margin: 40px;
+}
