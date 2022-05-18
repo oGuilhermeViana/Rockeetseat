@@ -1,0 +1,11 @@
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 5%;
+    padding: 0 20px; 
+    
+    /*o box-sizing força a caixa a ter os 100px de largura, msm com o padding de 20px*/
+    box-sizing: border-box;
+}
+
