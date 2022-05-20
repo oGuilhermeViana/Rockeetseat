@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários de outro planeta</title>
+</head>
+<body>
+    <form action="" method="get">
+        <!-- https://minhapagina.com.br/?name=guilherme&email=gui@email.com-->
+        <fieldset>
+            <legend>Contato</legend>
+
+            <label for="">Nome
+                <input type="text">
+            </label>
+            <button type="reset">Limpar</button>
+        </fieldset>
+    </form>
+
+    <form id="Contato" action="" method="post">
+        <fieldset form="Contato" name="inputs-contact">
+            <legend>Contato</legend>
+    
+            <label for="name">
+                Nome:
+                <input type="text" id="name">
+            </label>
+    
+            <label for="email">
+                E-mail:
+                <input type="email" name="" id="email">
+            </label>
+            <button type="submit">Enviar</button>
+        </fieldset>
+        <input type="text" list="fruits" placeholder="Escolha uma fruta">
+        <input type="color" name="color" id="color" list="colors">
+    </form>
+    
+    <datalist id="colors">
+        <option>#ff0000</option>
+        <option>#0000ff</option>
+        <option>#00ff00</option>
+    </datalist>
+    <datalist id="fruits">
+        <option>apple<option>
+        <option>banana<option>
+        <option>mango<option>
+        <option>orange<option>
+        <option>cherry<option>
+    </datalist>
+    
+</body>
+</html>
