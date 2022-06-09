@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* .box {
+  display: flex;
+  / 
+  flex-direction: column; 
+  flex-wrap: wrap;
+  /
+  flex-flow: column wrap;
+  border: 1px dashed red;
+}
+
+.box div {
+  border: 1px solid;
+  width: 800px;
+} */
+
+.box {
+  display: flex;
+  border: 1px dashed red;
+
+  justify-content: space-evenly;
+}
+
+.box div {
+  border: 1px solid;
+}
