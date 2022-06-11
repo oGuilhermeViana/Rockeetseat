@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+button {
+  border: none;
+  padding: 1rem;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+div.model-wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  position: fixed;
+}
+
+div.invisible{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fechar {
+  display: flex;
+  width: 13rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}

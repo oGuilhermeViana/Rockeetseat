@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+</head>
+<body>
+  <h1 id="title">Meu BLog</h1>
+
+  <div class="container">
+    <div class="photo">
+      <p class="myName">Guilherme Lima</p>
+    </div>
+    <div class="photo"></div>
+    <input type="text" value="Salve">
+  </div>
+
+</body>
+<script>
+  const name = document.querySelector(".myName")
+  const title = document.querySelector("h1")
+  const input = document.querySelector("input")
+
+  // Altera o texto
+  /* name.textContent = " O V14N4" */
+  name.textContent += " O V14N4"
+  console.log(name)
+
+  //Troca o texto
+  title.innerText = "My blog!"
+
+  // adiciona HTML
+  title.innerHTML = "Blog! <small>!!!</small>"
+
+  //trocar o valor ou mostrar o valor
+  input.value = "OK"
+  console.log(input.value)
+
+  title.setAttribute("class", "title")
+  title.removeAttribute("id")
+  console.log(title.getAttribute("class"))
+</script>
+</html>
