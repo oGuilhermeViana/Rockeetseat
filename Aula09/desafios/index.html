@@ -1,0 +1,88 @@
+<script>
+  
+  /* 
+  function getScore(score) {
+    let scoreA = score >= 9 && score <= 10
+    let scoreB = score >= 8 && score <= 8.9
+    let scoreC = score >= 7 && score <= 7.9
+    let scoreD = score >= 6 && score <= 6.9
+    let scoreE = score < 6 && score > 0
+
+    if (scoreA){
+      scoreFinal = "A"
+    } else if (scoreB){
+      scoreFinal = "B"
+    } else if (scoreC){
+      scoreFinal = "C"
+    } else if (scoreD){
+      scoreFinal = "D"
+    } else if (scoreE){
+      scoreFinal = "E"
+    } else {
+      scoreFinal = "Inválida"
+    }
+
+    return scoreFinal
+  }
+
+  console.log(getScore(101))
+  console.log(getScore(-1))
+  console.log(getScore(6))
+  console.log(getScore(9))
+*/
+/* 
+  let totalDespesas = 0, totalReceita = 0
+
+  let family = {
+    incomes: [2500, 3200, 250, 360],
+    expenses: [320.34, 128.45, 176.87, 1450]
+  }
+
+  function sum(array) {
+    let total = 0
+
+    for (let value of array) {
+      total += value
+    }
+    return total
+  }
+  
+  function calculateBalance() {
+    const calculateIncomes = sum(family.incomes)
+    const calculateExpenses = sum(family.expenses)
+
+    const total = calculateIncomes - calculateExpenses
+    const itsOK = total >= 0;
+    let balanceText = "Negativo"
+
+    if (itsOK) {
+      balanceText = "Positivo"
+    }
+
+    console.log(`Seu saldo é ${balanceText}: R$ ${total.toFixed(2).replace(".", ",")}`)
+  }
+
+  calculateBalance()
+ */
+
+  // Celsius to Fahrenheit
+
+  function transformDegree(degree) {
+    const celsiusExists = degree.toLowerCase().includes('c')
+    const fahrenheitExists = degree.toLowerCase().includes('f')
+    
+    if (!celsiusExists && !fahrenheitExists) {
+      throw new Error("Grau não existente")
+    }
+
+    // f => c
+    let formula = (fahrenheit) => (fahrenheit - 32) * 5/9
+  }
+
+  try {
+    transformDegree("82F")
+    transformDegree("33C")
+  } catch (error) {
+    console.log(error)
+  }
+</script>

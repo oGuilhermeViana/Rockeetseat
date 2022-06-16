@@ -1,0 +1,95 @@
+<script>
+/* 
+  //Type conversion(typecasting) vs Type coesion
+
+  //console.log("9" + "5")
+  //saida 95
+  //type coesion
+  console.log("9" + 5)
+  console.log(Number("9") + 5)
+*/  
+
+/* 
+  let string = "123"
+  console.log(typeof string)
+  console.log(typeof Number(string))
+
+  let number = 321
+  console.log(typeof number)
+  console.log(typeof String(number))
+*/
+/* 
+  let word = "Paralelepipedo"
+  console.log(word.length)
+  let number = 1234
+  console.log(String(number).length)
+*/
+/* 
+  // casas decimais
+  let number = 32.3214343
+
+  console.log(number)
+  console.log(number.toFixed(2))
+  console.log(number.toFixed(2).replace(".", ","))
+ */
+/* 
+  // maiúsculas e minúsculas
+  let phrase = "Estudando JavaScript"
+  console.log(phrase)
+  console.log(phrase.toUpperCase())
+  console.log(phrase.toLowerCase())
+*/
+/* 
+  // achar uma palavra em uma frase
+  let phrase = "Eu perdi a mulher que eu mais gostava por que sou um idiota"
+
+  console.log(phrase.includes("idiota"))
+  console.log(phrase.includes("linda"))
+*/
+/* 
+  let phrase = "I love you"
+  phrase = phrase.split(" ")
+  console.log(phrase)
+  phrase = phrase.join("_")
+  console.log(phrase.toUpperCase())
+*/
+/* 
+  // criar um array com construtor
+  let array = [
+    "a",
+    "b",
+    "c"
+  ]
+
+  let myArray = new Array('a', 'b', 'c')
+
+  console.log(array)
+  console.log(myArray)
+
+  console.log(array.length)
+*/
+/* 
+  let word = "manipulação"
+  console.log(Array.from(word))
+*/
+
+  let techs = ["html", "css", "js"]
+
+  // adicionar um item no fim
+  techs.push("git")
+  // adicionar um item no começo
+  techs.unshift("sql")
+  // remover do fim
+  //techs.pop()
+  // remover do começo
+  //techs.shift()
+  // pegar somente alguns elementos do array
+  //console.log(techs.slice(1))
+  // remover 1 ou mais itens em qualquer posição do array
+  //console.log(techs.splice(1,2))
+  // encontrar a posição de um elemento no array
+  let index = techs.indexOf("css")
+  techs.splice(index, 1)
+  
+  console.log(techs)
+</script>

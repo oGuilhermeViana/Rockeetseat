@@ -1,0 +1,122 @@
+<script>
+  // declaration
+  var name
+  let age, isHuman
+
+  // assignment
+  name = "Guilherme"
+  age = 23
+  isHuman = true
+
+  //type of viriable
+  console.log(typeof name)
+  console.log(typeof age)
+  console.log(typeof isHuman)
+
+  //value of viriable
+  console.log(name, age, isHuman)
+  console.log(`
+    name: ${name}
+    age: ${age}
+    isHuman: ${isHuman}
+  `)
+
+  //Object
+  const person = {
+    name: "Guilherme",
+    age: 23,
+    weight: 90,
+    isAdmin: true
+  }
+
+  console.log(person)
+  console.log(person.name)
+  console.log(`${person.name} tem ${person.age} anos`)
+  
+  // Array
+  const animals = [
+    "Lion",
+    "Monkey",
+    "Cat"
+  ]
+
+  console.log(animals)
+  console.log(animals[1])
+
+  const mugiwara = [
+    {
+      name: "Zuffy",
+      occupation: "captain",
+      age: 19
+    },
+    {
+      name: "Zoro",
+      occupation: "swordsman",
+      age: 21
+    },
+    {
+      name: "Sanji",
+      occupation: "cook",
+      age: 21
+    }
+  ]
+
+  console.log(mugiwara)
+  console.log(mugiwara[1])
+  console.log(mugiwara[1].name)
+
+
+  // exercícios
+  // 1
+  let height;
+
+  //2
+  console.log(typeof height)
+
+  //3
+  name = "Guilherme"
+  age = 23
+  stars = 5.5
+  isSubscribed = true
+
+  //4
+  let student = {}
+
+  console.log(typeof student)
+
+  student = {
+    name: "Guilherme",
+    age: 23,
+    stars: 5.5,
+    height: 90,
+    isSubscribed: true
+  }
+
+  student2 = {
+    name: "Igor",
+    age: 23,
+    stars: 5.5,
+    height: 90,
+    isSubscribed: true
+  }
+  console.log(`${student.name} de idade ${student.age} pesa ${student.height} Kg`)
+
+  let students = []
+  
+  students = [
+    student
+  ]
+
+  student2 = {
+    name: "Igor",
+    age: 23,
+    stars: 5.5,
+    height: 90,
+    isSubscribed: true
+  }
+
+  students[1] = student2
+  
+  console.log(students)
+  console.log(students[0])
+</script>
